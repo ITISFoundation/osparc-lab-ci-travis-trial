@@ -6,10 +6,7 @@ python:
   - "2.7"
 
 # command to run tests
-jobs:
-  include:
-    - stage: test1
-      script: ./Package1/test1.py
-    - stage: test2
-      script: ./Package2/test2.py
+script: 
+  - python ./Package1/test1.py
+  - python ./Package2/test2.py
 
