@@ -6,8 +6,10 @@ python:
   - "2.7"
 
 # command to run tests
-script: 
+script:
+  - echo "Hello World SH Test 0"
   - python ./Package1/test1.py
   - python ./Package2/test2.py
   - python ./Package3/test3.py
+  - python ./Package4/test4.py
 
