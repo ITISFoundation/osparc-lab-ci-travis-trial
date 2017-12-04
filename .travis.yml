@@ -1,0 +1,15 @@
+# Use containers instead of full VMs for faster startup.
+sudo: false
+
+language: python
+python:
+  - "2.7"
+
+# command to run tests
+jobs:
+  include:
+    - stage: test1
+      script: ./Package1/test1.py
+    - stage: test2
+      script: ./Package2/test2.py
+
