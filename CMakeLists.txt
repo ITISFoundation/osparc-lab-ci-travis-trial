@@ -9,6 +9,9 @@ ADD_SUBDIRECTORY( Package2 )
 ADD_SUBDIRECTORY( Package3 )
 ADD_SUBDIRECTORY( Package4 )
 
+SET( PEP8_SCRIPT_NAME ${CMAKE_CURRENT_BINARY_DIR}/check_pep8.sh )
+FILE( WRITE ${PEP8_SCRIPT_NAME} "find . -iname \"*.py\" | xargs pylint" )
 ADD_TEST( NAME PythonOverallPep8
-	COMMAND find . -iname \"*.py\" | xargs pylint
+	COMMAND chmod u+x ${PEP8_SCRIPT_NAME}
+	COMMAND ${PEP8_SCRIPT_NAME}
 )
