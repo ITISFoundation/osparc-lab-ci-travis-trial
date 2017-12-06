@@ -10,5 +10,5 @@ ADD_SUBDIRECTORY( Package3 )
 ADD_SUBDIRECTORY( Package4 )
 
 ADD_TEST( NAME PythonOverallPep8
-	COMMAND find . -iname "*.py" | xargs pylint
+	COMMAND find . -iname \"*.py\" | xargs pylint
 )
