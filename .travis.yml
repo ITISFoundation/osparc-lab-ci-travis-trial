@@ -9,6 +9,7 @@ install:
   - mkdir _bin
   - cd _bin
   - cmake ..
+  - make -j4
   - cd ..
   
 # command to run tests
