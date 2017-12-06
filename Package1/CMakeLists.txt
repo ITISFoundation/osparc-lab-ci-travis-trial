@@ -7,3 +7,8 @@ ADD_TEST( NAME TestPackage1_PEP8
 	COMMAND pylint --reports=no test1.py
 	WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 )
+
+ADD_TEST( NAME TestPackage1_PEP8_Module1
+	COMMAND pylint --reports=no Module1
+	WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+)
