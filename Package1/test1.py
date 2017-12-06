@@ -8,9 +8,9 @@ def main():
 
     exit_code = 0
     if exit_code != 0:
-        print "This shall fail now with exit code ", exit_code
+        print "Test 1 shall fail now with exit code ", exit_code
     else:
-        print "I think, this was a success :)"
+        print "I think, test 1 was a success :)"
     return exit_code
 
 if __name__ == '__main__':

@@ -9,6 +9,7 @@ ADD_SUBDIRECTORY( Package2 )
 ADD_SUBDIRECTORY( Package3 )
 ADD_SUBDIRECTORY( Package4 )
 
-ADD_TEST( NAME OverallTest
-	COMMAND echo "Testing in main CMakeLists"
+ADD_TEST( NAME PythonOverallPep8
+	COMMAND ./check_pep8.sh
+	WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 )
