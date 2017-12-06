@@ -9,6 +9,6 @@ ADD_SUBDIRECTORY( Package2 )
 ADD_SUBDIRECTORY( Package3 )
 ADD_SUBDIRECTORY( Package4 )
 
-ADD_TEST( NAME PythonOverallPep8
-	COMMAND find . -iname "*.py" | xargs pylint
+ADD_TEST( NAME OverallTest
+	COMMAND echo "Testing in main CMakeLists"
 )
