@@ -5,11 +5,15 @@ language: python
 python:
   - "2.7"
 
+install:
+  - mkdir _bin
+  - cd _bin
+  - cmake ..
+  - cd ..
+  
 # command to run tests
 script:
-  - echo "Hello World SH Test 0"
-  - python ./Package1/test1.py
-  - python ./Package2/test2.py
-  - python ./Package3/test3.py
-  - python ./Package4/test4.py
+  - cd _bin
+  - ctest -V
+  - cd ..
 
