@@ -11,5 +11,4 @@ ADD_SUBDIRECTORY( Package4 )
 
 ADD_TEST( NAME OverallTest
 	COMMAND echo "Testing in main CMakeLists"
-	WORKING_DIRECTORY .
 )
